@@ -1,0 +1,15 @@
+:root{
+    --primary-font: 'Poppins', sans-serif;
+    --primary-color: #E02C6D;
+    --gry-color: #787885;
+    --black-color: #18191F;
+    --orange-color: #FB8200;
+    --white-color: #FFFFFF;
+
+}
+*{
+    margin: 0;
+}
+body{
+    font-family: var(--primary-font);
+}
