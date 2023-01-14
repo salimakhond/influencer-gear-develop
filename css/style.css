@@ -1,15 +1,508 @@
-:root{
+:root {
     --primary-font: 'Poppins', sans-serif;
     --primary-color: #E02C6D;
+    --secondary-color: #0A0826;
     --gry-color: #787885;
-    --black-color: #18191F;
+    --black-color: #3A3A3A;
     --orange-color: #FB8200;
     --white-color: #FFFFFF;
 
 }
-*{
+
+* {
     margin: 0;
+    border: none;
 }
-body{
+
+body {
     font-family: var(--primary-font);
+    background-color: var(--white-color);
+}
+
+.container {
+    width: 1045px;
+    max-width: 100%;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 10px 24px;
+    border-radius: 41px;
+}
+
+.primary-btn i {
+    margin-left: 8px;
+}
+
+hr {
+    border: 1px solid rgb(192 204 218 / 60%);
+}
+
+/*-----------------
+    header style
+-------------------*/
+.header {
+    padding: 0px 120px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 85px;
+    padding-bottom: 20px;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--black-color);
+}
+
+.menus {
+    display: flex;
+    gap: 34px;
+}
+
+.menu a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black-color);
+}
+
+/*-------------
+banner style
+---------------*/
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 130PX;
+    background-image: url(/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding: 60px 0px 100px 0px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+    color: var(--black-color);
+}
+
+.banner-description {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black-color);
+    margin: 16px 0px;
+}
+
+/*----------------
+banner style end
+------------------*/
+
+/*-----------------
+client logo style
+-------------------*/
+.client-logo {
+    margin: 0px 45px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 60px;
+}
+
+.images .image {
+    padding: 35px 0px;
+}
+
+.images .image img {
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------------
+client logo style end
+-----------------------*/
+
+/*-----------
+main style 
+-------------*/
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* shopping section style */
+.shopping-section {
+    padding: 100px 0px;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    color: var(--black-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.shopping-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.single-cards {
+    padding: 18px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.card-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--black-color);
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.pricing {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--black-color);
+}
+
+.ratings {
+    display: flex;
+    gap: 5px;
+}
+
+.ratings .rating a {
+    color: var(--orange-color);
+    font-size: 16px;
+}
+
+.ratings span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--gry-color);
+}
+
+.card-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--gry-color);
+}
+
+.more-shopping-btn {
+    margin-top: 50px;
+    text-align: right;
+}
+
+.more-shopping-btn .btn {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* feature section style */
+.feature-section {
+    display: flex;
+    gap: 95px;
+    margin: 0px 160px;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60px;
+    color: var(--black-color);
+}
+
+.feature-description {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--gry-color);
+    margin: 16px 0px;
+    width: 50%;
+}
+
+/*-----------
+main style 
+-------------*/
+
+/*-------------
+footer style
+--------------*/
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px 0px;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--white-color);
+}
+
+.footer-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D9DBE1;
+    margin-bottom: 16px;
+    margin-top: 5px;
+}
+
+
+.icons .icon {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    background-color: rgb(255 255 255 / 10%);
+    display: inline-block;
+    text-align: center;
+    margin: 0px 8px;
+}
+
+.icons .icon a {
+    font-size: 16px;
+    color: var(--white-color);
+}
+
+/*----------------
+footer style end
+------------------*/
+
+
+
+
+/*-----------------------
+    media queries style
+-------------------------*/
+/* mobile device */
+@media only screen and (max-width:576px) {
+    * {
+        margin: auto;
+    }
+
+    .header {
+        padding: 0px 16px;
+    }
+
+    .menus {
+        display: none;
+    }
+
+    .nav {
+        padding-top: 35px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        background-position: top center;
+        gap: 74PX;
+        padding: 60px 0px 50px 0px;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .client-logo {
+        margin: 0px;
+    }
+
+    .images .image {
+        padding: 11px 0px;
+    }
+
+    .images {
+        column-gap: 30px;
+    }
+
+    .shopping-section {
+        padding: 50px 0px;
+    }
+
+    .section-title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .shopping-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-section {
+        flex-direction: column;
+        margin: 0px 16px;
+        gap: 30px;
+    }
+
+    .feature-title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .feature-content {
+        text-align: center;
+    }
+
+    .feature-description {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+}
+
+/* tab device */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .header {
+        padding: 0px 50px;
+    }
+
+    .menus {
+        gap: 16px;
+    }
+
+    .nav {
+        padding-top: 35px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        background-position: top center;
+        gap: 74PX;
+        padding: 60px 0px 50px 0px;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .client-logo {
+        margin: 0px;
+    }
+
+    .images .image {
+        padding: 11px 0px;
+    }
+
+    .images {
+        column-gap: 30px;
+    }
+
+    .main {
+        margin: 0px 50px;
+    }
+
+    .shopping-section {
+        padding: 50px 0px;
+    }
+
+
+    .shopping-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-section {
+        flex-direction: column;
+        margin: 0px;
+        gap: 30px;
+    }
+
+    .feature-title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .feature-content {
+        text-align: center;
+    }
+
+    .feature-description {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
 }
